@@ -27,4 +27,11 @@ def won?(board)
 end
 
 def full?(board)
+  board.all? do |index|
+    if index == " "
+       false
+     else
+       true
+    end
+  end
 end
